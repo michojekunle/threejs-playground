@@ -1,16 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import ChairCanvas from "./components/chair-canvas";
+import LearnCanvas from "./components/learn-canvas";
+import TestCanvas from "./components/test-canvas";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-   <>
-    <h1 className='text-3xl text-green-500'>Hello world</h1>
-   </>
-  )
+    <ChairCanvas/>
+    // <div id="canvas-container" className="flex items-center justify-center min-h-screen w-full">
+      
+    //   <div className="max-w-md mx-auto h-96 flex flex-col">
+    //     <h1 className="text-4xl mb-5 font-bold text-center">3D Model Viewer</h1>
+    //     <div className="w-full flex-1">
+    //       <TestCanvas/>
+    //     </div>
+    //   </div>
+
+    //   <div className="max-w-md mx-auto h-96 flex flex-col">
+    //     <h1 className="text-4xl mb-5 font-bold text-center">(Learn RTF/RTD)</h1>
+    //     <div className="w-full flex-1">
+    //       <LearnCanvas/>
+    //     </div>
+    //   </div>
+    //   {/* <Confirmation/> */}
+    // </div>
+  );
 }
 
-export default App
+export default App;
