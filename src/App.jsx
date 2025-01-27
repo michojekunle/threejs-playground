@@ -1,9 +1,11 @@
 import ChairCanvas from "./components/chair-canvas";
+import GlassChair from "./components/glass-chair";
 import LearnCanvas from "./components/learn-canvas";
 import TestCanvas from "./components/test-canvas";
 
 function App() {
   return (
+    // <GlassChair/>
     <ChairCanvas/>
     // <div id="canvas-container" className="flex items-center justify-center min-h-screen w-full">
       
