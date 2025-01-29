@@ -8,9 +8,12 @@ function App() {
   return (
     // <GlassChair/>
     // <ChairCanvas/>
-    <LivingRoomCanvas/>
+    <>
+      <h1 className="text-4xl text-red-200 rounded-2xl">Hello world!!</h1>
+      <LivingRoomCanvas />
+    </>
     // <div id="canvas-container" className="flex items-center justify-center min-h-screen w-full">
-      
+
     //   <div className="max-w-md mx-auto h-96 flex flex-col">
     //     <h1 className="text-4xl mb-5 font-bold text-center">3D Model Viewer</h1>
     //     <div className="w-full flex-1">
