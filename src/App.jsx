@@ -9,7 +9,6 @@ function App() {
     // <GlassChair/>
     // <ChairCanvas/>
     <>
-      <h1 className="text-4xl text-red-200 rounded-2xl">Hello world!!</h1>
       <LivingRoomCanvas />
     </>
     // <div id="canvas-container" className="flex items-center justify-center min-h-screen w-full">

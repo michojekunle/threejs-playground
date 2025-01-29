@@ -18,30 +18,26 @@ export default function LivingRoomCanvas() {
           "linear-gradient(135deg, #fca5a5 0%, #93c5fd 50%, #e879f9 100%)",
       }}
     >
-      <Canvas shadows camera={{ position: [0, 2, 5], fov: 50 }}>
+      <Canvas shadows camera={{ position: [50, 100, 65], rotation: [180, 0, 0], fov: 25, near: 0.1, far: 4000 }}>
         {/* Lighting */}
-        <ambientLight intensity={0.5} />
-        <spotLight
+        {/* <ambientLight intensity={0.5} /> */}
+        {/* <spotLight
           position={[10, 10, 10]}
           angle={0.15}
           penumbra={1}
           intensity={1}
           castShadow
-        />
+        /> */}
 
         {/* 3D Model */}
         <React.Suspense fallback={<Html>Loading...</Html>}>
           <SitingRoomModel />
         </React.Suspense>
-
+        <axesHelper args={[100]} />
+        <gridHelper args={[100]} />
         {/* Environment and Controls */}
         <Environment preset="studio" background={false} />
-        <OrbitControls
-          minPolarAngle={Math.PI / 4}
-          maxPolarAngle={Math.PI / 2}
-          enableZoom={true}
-          enablePan={false}
-        />
+        <OrbitControls makeDefault minPolarAngle={0} maxPolarAngle={Math.PI / 2} />
 
         {/* Shadows */}
         <ContactShadows
